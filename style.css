@@ -1,0 +1,286 @@
+/* 기본 스타일 - Pretendard 폰트 적용 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    line-height: 1.7; /* 줄 간격 살짝 넓혀 가독성 향상 */
+    margin: 0;
+    padding: 0;
+    background-color: #f8fbf8; /* 더 밝은 배경색 */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #66bb6a; /* 더 산뜻한 초록색 */
+    color: white;
+    padding: 1.8em 0;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em; /* 제목 크기 키움 */
+    letter-spacing: -0.03em; /* 자간 조절 */
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    max-width: 960px; /* 최대 너비 살짝 넓힘 */
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px; /* 모서리 둥글게 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* 그림자 부드럽게 */
+}
+
+section {
+    margin-bottom: 40px; /* 섹션 간 간격 넓힘 */
+}
+
+h2 {
+    color: #2e7d32;
+    border-bottom: 2px solid #81c784; /* 경계선 색 변경 */
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    font-size: 2.2em; /* 부제목 크기 키움 */
+    font-weight: 700; /* 폰트 두께 조절 */
+}
+
+h3 {
+    color: #388e3c;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+h4 {
+    color: #43a047;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+ul, ol {
+    margin-left: 25px;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #1b5e20;
+    font-weight: 600;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0; /* 색상 변경 */
+    margin: 50px 0; /* 간격 넓힘 */
+}
+
+/* 차시별 수업 계획 아티클 스타일 */
+.lesson-chasi {
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #f0f7f0; /* 배경색 변경 */
+    border-left: 6px solid #66bb6a; /* 경계선 두께 및 색상 변경 */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
+}
+
+.lesson-chasi h3 {
+    color: #2e7d32;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.lesson-chasi h4 {
+    color: #43a047;
+}
+
+/* 특정 목록 스타일 */
+.lesson-chasi ol li ul {
+    list-style-type: circle;
+    margin-left: 28px;
+}
+
+.lesson-chasi ol li ul li ul {
+    list-style-type: square;
+    margin-left: 28px;
+}
+
+/* IB 디자인 단계 강조 스타일 */
+.ib-design-stage {
+    font-size: 1.15em;
+    color: #00796b;
+    margin-top: -10px; /* 제목 아래로 좀 더 붙이기 */
+    margin-bottom: 25px;
+    font-weight: 700;
+    background-color: #e0f2f1; /* 배경색 추가 */
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block; /* 내용만큼만 배경색 적용 */
+}
+
+
+/* 모든 테이블 공통 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden; /* 모서리 둥글게 처리 위함 */
+}
+
+table thead tr {
+    background-color: #eafbea; /* 헤더 배경색 */
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0; /* 얇은 테두리 */
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+table th {
+    color: #2e7d32;
+    font-weight: 700;
+    white-space: nowrap;
+    width: 15%;
+}
+
+/* IB MYP 디자인 목표 테이블 특정 스타일 */
+.ib-table th {
+    width: 20%; /* '구분' 열 너비 조정 */
+}
+
+.ib-table td h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #388e3c; /* IB h3 색상 유지 */
+}
+
+/* 차시별 계획 테이블 특정 스타일 */
+.chasi-table th {
+    background-color: #dcedc8; /* 차시별 테이블 헤더 색상 */
+    color: #2e7d32;
+    width: 20%; /* 각 열 너비 균등 분배 */
+}
+.chasi-table th:first-child { width: 25%; } /* 활동 목표 열 너비 조정 */
+.chasi-table th:nth-child(2) { width: 20%; } /* 준비물 열 너비 조정 */
+.chasi-table th:last-child { width: 55%; } /* 수업 흐름 열 너비 조정 */
+
+.chasi-table td ul, .chasi-table td ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+
+footer {
+    background-color: #444; /* footer 색상 변경 */
+    color: white;
+    text-align: center;
+    padding: 1.2em 0;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    table th, table td {
+        padding: 10px;
+        display: block; /* 모바일에서 셀을 블록 요소로 만들어 스택 */
+        width: 100% !important; /* 너비를 100%로 설정 */
+        box-sizing: border-box; /* 패딩과 보더를 너비에 포함 */
+    }
+
+    table thead {
+        display: none; /* 모바일에서 헤더 숨김 */
+    }
+
+    table tbody tr {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        display: block;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    table tbody td:first-child {
+        background-color: #f0f7f0; /* 첫 셀을 헤더처럼 보이게 */
+        font-weight: bold;
+        color: #2e7d32;
+        border-bottom: none;
+    }
+
+    table tbody td:last-child {
+        border-top: none;
+    }
+
+    .ib-table td h3 {
+        padding-top: 0;
+    }
+
+    .lesson-chasi {
+        padding: 20px;
+    }
+
+    .ib-design-stage {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+}
+
+/* 작은 화면에서 더 세밀한 조정 */
+@media (max-width: 480px) {
+    main {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+}
